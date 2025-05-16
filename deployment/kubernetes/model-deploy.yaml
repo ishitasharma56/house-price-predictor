@@ -1,0 +1,13 @@
+spec:
+  containers:
+    - name: house-price-model
+      image: ishitasharma14/house-price-model:latest
+      ports:
+        - containerPort: 8000
+      resources:
+        requests:
+          cpu: "50m"
+          memory: "64Mi"
+        limits:
+          cpu: "100m"
+          memory: "128Mi"
